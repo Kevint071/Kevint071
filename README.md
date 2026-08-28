@@ -23,12 +23,23 @@
 
 ## 👋 Sobre mí
 
+<table>
+  <tr>
+    <td width="60%" valign="middle">
+
 - 💻 Full Stack Developer.
 - ⚙️ Disfruto automatizar procesos: si algo se repite manualmente, busco la forma de dejar de hacerlo.
 - 🏗️ Conocedor de arquitecturas de software y de llevarlas a la práctica, como arquitectura limpia.
 - 🥁🎹 Baterista y pianista.
 
 > *Si lo hago 2 veces a mano, la 3ra lo automatizo.*
+
+</td>
+<td width="40%" align="center">
+      <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="100%" alt="Programando" />
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -93,6 +104,14 @@
 <br/>
 
 <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Kevint071&theme=dracula&hide_border=true&layout=compact&langs_count=8" alt="Lenguajes más usados" />
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kevint071/Kevint071/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kevint071/Kevint071/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake de contribuciones" src="https://raw.githubusercontent.com/Kevint071/Kevint071/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 
