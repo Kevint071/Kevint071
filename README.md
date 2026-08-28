@@ -88,7 +88,7 @@
 <div align="center">
 
 <img height="165" src="https://github-stats-extended.vercel.app/api?username=Kevint071&show_icons=true&theme=dracula&hide_border=true&count_private=true" alt="Estadísticas de GitHub" />
-<img height="165" src="https://streak-stats.demolab.com/?user=Kevint071&theme=dracula&hide_border=true" alt="Racha de contribuciones" />
+<img height="165" src="https://streak-stats.demolab.com/?user=Kevint071&theme=dracula&hide_border=true&cache_seconds=1800" alt="Racha de contribuciones" />
 
 <br/>
 
