@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="112" viewBox="0 0 820 112" role="img" aria-label="Andrés Torrecilla, Full Stack Developer">
+  <style>
+    .s{font-family:-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif} .m{font-family:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes blink{50%{opacity:0}}
+    .cur{animation:blink 1s steps(1) infinite}
+    .a{opacity:0;animation:in .6s cubic-bezier(.2,.7,.2,1) both}
+    .d{transform-origin:left center;animation:draw .9s cubic-bezier(.2,.7,.2,1) both}
+    @media (prefers-reduced-motion:reduce){.a,.d{animation:none;opacity:1}}
+  </style>
+
+  <rect class="d" x="0" y="14" width="44" height="3" rx="1.5" fill="#0969da" style="animation-delay:.1s"/>
+  <text class="a s" x="0" y="64" font-size="40" font-weight="700" fill="#1f2328" style="animation-delay:0.1s">Andrés Torrecilla</text>
+
+  <clipPath id="p0"><rect x="0" y="74" height="30" width="0"><animate attributeName="width" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.0200;0.0867;0.2800;0.3133;1.0000" values="0;0;206;206;0;0"/></rect></clipPath>
+  <text class="m" x="0" y="96" font-size="18" font-weight="500" fill="#0969da" textLength="206" lengthAdjust="spacing" clip-path="url(#p0)">Full Stack Developer</text>
+  <g class="cur"><rect x="0" y="79" width="2" height="21" fill="#0969da" opacity="0"><animate attributeName="x" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.0200;0.0867;0.2800;0.3133;1.0000" values="0;0;206;206;0;0"/><animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.0133;0.3200;1.0000" values="0;1;0;0"/></rect></g>
+  <clipPath id="p1"><rect x="0" y="74" height="30" width="0"><animate attributeName="width" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.3533;0.4667;0.6133;0.6467;1.0000" values="0;0;350.20000000000005;350.20000000000005;0;0"/></rect></clipPath>
+  <text class="m" x="0" y="96" font-size="18" font-weight="500" fill="#0969da" textLength="350.20000000000005" lengthAdjust="spacing" clip-path="url(#p1)">Automatización de procesos y datos</text>
+  <g class="cur"><rect x="0" y="79" width="2" height="21" fill="#0969da" opacity="0"><animate attributeName="x" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.3533;0.4667;0.6133;0.6467;1.0000" values="0;0;350.20000000000005;350.20000000000005;0;0"/><animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.3467;0.6533;1.0000" values="0;1;0;0"/></rect></g>
+  <clipPath id="p2"><rect x="0" y="74" height="30" width="0"><animate attributeName="width" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.6867;0.8200;0.9467;0.9800;1.0000" values="0;0;453.20000000000005;453.20000000000005;0;0"/></rect></clipPath>
+  <text class="m" x="0" y="96" font-size="18" font-weight="500" fill="#0969da" textLength="453.20000000000005" lengthAdjust="spacing" clip-path="url(#p2)">Arquitectura limpia, APIs y aplicaciones web</text>
+  <g class="cur"><rect x="0" y="79" width="2" height="21" fill="#0969da" opacity="0"><animate attributeName="x" dur="15s" repeatCount="indefinite" keyTimes="0.0000;0.6867;0.8200;0.9467;0.9800;1.0000" values="0;0;453.20000000000005;453.20000000000005;0;0"/><animate attributeName="opacity" dur="15s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.6800;0.9867;1.0000" values="0;1;0;0"/></rect></g>
+</svg>

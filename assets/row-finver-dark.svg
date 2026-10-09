@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="136" viewBox="0 0 820 136" role="img" aria-label="Finver: Control financiero familiar: ingresos y gastos organizados por grupos, con un análisis básico de lo que entra y lo que sale. Next.js, TypeScript.">
+  <style>
+    text{font-family:-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif} .m{font-family:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(2.5px,-2.5px)}}
+    .a{opacity:0;animation:in .6s cubic-bezier(.2,.7,.2,1) both}
+    .d{transform-origin:left center;transform-box:fill-box;animation:draw .9s cubic-bezier(.2,.7,.2,1) both}
+    .nu{animation:nudge 2.8s ease-in-out infinite}
+    @keyframes gr{0%{transform:scaleY(0)}14%{transform:scaleY(1)}86%{transform:scaleY(1)}97%{transform:scaleY(0)}100%{transform:scaleY(0)}}.gr{transform-box:fill-box;transform-origin:bottom;animation:gr 6s cubic-bezier(.2,.7,.2,1) infinite}
+    @media (prefers-reduced-motion:reduce){.a,.d,.nu{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
+  </style>
+  <g class="a" style="animation-delay:.05s" transform="translate(0 20)">
+    <rect x=".5" y=".5" width="71" height="71" rx="8" fill="#161b22" stroke="#30363d"/>
+    <g class="glyph">
+    <path d="M9 60H63" stroke="#6e7681" stroke-width="1.2" stroke-linecap="round" opacity=".7"/>
+    <rect class="gr" x="12" y="30" width="6" height="30" rx="1.5" fill="#58a6ff" style="animation-delay:0.00s"/>
+    <rect class="gr" x="20" y="42" width="6" height="18" rx="1.5" fill="#6e7681" style="animation-delay:0.09s"/>
+    <rect class="gr" x="32" y="38" width="6" height="22" rx="1.5" fill="#58a6ff" style="animation-delay:0.18s"/>
+    <rect class="gr" x="40" y="34" width="6" height="26" rx="1.5" fill="#6e7681" style="animation-delay:0.27s"/>
+    <rect class="gr" x="52" y="22" width="6" height="38" rx="1.5" fill="#58a6ff" style="animation-delay:0.36s"/>
+    <rect class="gr" x="60" y="40" width="6" height="20" rx="1.5" fill="#6e7681" style="animation-delay:0.45s"/>
+    </g>
+  </g>
+  <text class="a" x="100" y="34" font-size="16" font-weight="600" fill="#e6edf3" style="animation-delay:.15s">Finver</text>
+  <text class="a" x="100" y="58" font-size="14" fill="#8b949e" style="animation-delay:.25s">Control financiero familiar: ingresos y gastos organizados por grupos,</text>
+  <text class="a" x="100" y="78" font-size="14" fill="#8b949e" style="animation-delay:.32s">con un análisis básico de lo que entra y lo que sale.</text>
+  <g class="a" style="animation-delay:0.50s"><rect x="100.5" y="92.5" width="75" height="24" rx="4" fill="none" stroke="#30363d"/><text class="m" x="138" y="108.5" font-size="13" fill="#8b949e" text-anchor="middle">Next.js</text></g>
+  <g class="a" style="animation-delay:0.57s"><rect x="183.5" y="92.5" width="98" height="24" rx="4" fill="none" stroke="#30363d"/><text class="m" x="232.5" y="108.5" font-size="13" fill="#8b949e" text-anchor="middle">TypeScript</text></g>
+  <g class="a" style="animation-delay:.4s">
+    <circle cx="675" cy="29.5" r="3.5" fill="#3fb950" opacity=".4"><animate attributeName="r" values="3.5;8;8" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0;0" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="675" cy="29.5" r="3.5" fill="#3fb950"/>
+    <text class="m" x="786" y="34" font-size="13" fill="#8b949e" text-anchor="end">Demo en línea</text>
+  </g>
+  <g transform="translate(805 21)"><g class="nu" fill="none" stroke="#58a6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 14 14 0"/><path d="M4 0h10v10"/></g></g>
+  <rect class="d" x="0" y="135" width="820" height="1" fill="#30363d" style="animation-delay:.1s"/>
+</svg>

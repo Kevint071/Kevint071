@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="136" viewBox="0 0 820 136" role="img" aria-label="Taskev: Gestor de tareas pensado para responder qué toca hacer ahora: ordena por prioridad y progreso, y separa lo que vence hoy, lo atrasado y lo bloqueado. Next.js, React, TypeScript, PostgreSQL.">
+  <style>
+    text{font-family:-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif} .m{font-family:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(2.5px,-2.5px)}}
+    .a{opacity:0;animation:in .6s cubic-bezier(.2,.7,.2,1) both}
+    .d{transform-origin:left center;transform-box:fill-box;animation:draw .9s cubic-bezier(.2,.7,.2,1) both}
+    .nu{animation:nudge 2.8s ease-in-out infinite}
+    @keyframes fm{0%{transform:translateY(0)}20%{transform:translateY(0)}26%{transform:translateY(14px)}46%{transform:translateY(14px)}52%{transform:translateY(28px)}72%{transform:translateY(28px)}78%{transform:translateY(42px)}92%{transform:translateY(42px)}99%{transform:translateY(0)}100%{transform:translateY(0)}}.fm{animation:fm 9s cubic-bezier(.4,0,.2,1) infinite}@keyframes d0{0%{opacity:0}22%{opacity:0}27%{opacity:1}96%{opacity:1}100%{opacity:0}}@keyframes s0{0%{opacity:1}22%{opacity:1}27%{opacity:.4}96%{opacity:.4}100%{opacity:1}}.d0{animation:d0 9s cubic-bezier(.2,.7,.2,1) infinite}.s0{animation:s0 9s cubic-bezier(.2,.7,.2,1) infinite}@keyframes d1{0%{opacity:0}48%{opacity:0}53%{opacity:1}96%{opacity:1}100%{opacity:0}}@keyframes s1{0%{opacity:1}48%{opacity:1}53%{opacity:.4}96%{opacity:.4}100%{opacity:1}}.d1{animation:d1 9s cubic-bezier(.2,.7,.2,1) infinite}.s1{animation:s1 9s cubic-bezier(.2,.7,.2,1) infinite}@keyframes d2{0%{opacity:0}74%{opacity:0}79%{opacity:1}96%{opacity:1}100%{opacity:0}}@keyframes s2{0%{opacity:1}74%{opacity:1}79%{opacity:.4}96%{opacity:.4}100%{opacity:1}}.d2{animation:d2 9s cubic-bezier(.2,.7,.2,1) infinite}.s2{animation:s2 9s cubic-bezier(.2,.7,.2,1) infinite}@keyframes d3{0%{opacity:0}90%{opacity:0}95%{opacity:1}96%{opacity:1}100%{opacity:0}}@keyframes s3{0%{opacity:1}90%{opacity:1}95%{opacity:.4}96%{opacity:.4}100%{opacity:1}}.d3{animation:d3 9s cubic-bezier(.2,.7,.2,1) infinite}.s3{animation:s3 9s cubic-bezier(.2,.7,.2,1) infinite}
+    @media (prefers-reduced-motion:reduce){.a,.d,.nu{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
+  </style>
+  <g class="a" style="animation-delay:.05s" transform="translate(0 20)">
+    <rect x=".5" y=".5" width="71" height="71" rx="8" fill="#f6f8fa" stroke="#d1d9e0"/>
+    <g class="glyph">
+    <rect class="fm" x="5" y="9" width="2.5" height="14" rx="1.25" fill="#0969da"/>
+    <rect x="13" y="12" width="8" height="8" rx="2" fill="none" stroke="#8c959f" stroke-width="1.2"/>
+    <rect class="d0" x="13" y="12" width="8" height="8" rx="2" fill="#0969da" opacity="0"/>
+    <path class="d0" d="M14.6 16l2 2 3-4" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+    <rect class="s0" x="27" y="14" width="30" height="4" rx="2" fill="#c4ccd4"/>
+    <rect x="13" y="26" width="8" height="8" rx="2" fill="none" stroke="#8c959f" stroke-width="1.2"/>
+    <rect class="d1" x="13" y="26" width="8" height="8" rx="2" fill="#0969da" opacity="0"/>
+    <path class="d1" d="M14.6 30l2 2 3-4" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+    <rect class="s1" x="27" y="28" width="24" height="4" rx="2" fill="#c4ccd4"/>
+    <rect x="13" y="40" width="8" height="8" rx="2" fill="none" stroke="#8c959f" stroke-width="1.2"/>
+    <rect class="d2" x="13" y="40" width="8" height="8" rx="2" fill="#0969da" opacity="0"/>
+    <path class="d2" d="M14.6 44l2 2 3-4" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+    <rect class="s2" x="27" y="42" width="33" height="4" rx="2" fill="#c4ccd4"/>
+    <rect x="13" y="54" width="8" height="8" rx="2" fill="none" stroke="#8c959f" stroke-width="1.2"/>
+    <rect class="d3" x="13" y="54" width="8" height="8" rx="2" fill="#0969da" opacity="0"/>
+    <path class="d3" d="M14.6 58l2 2 3-4" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+    <rect class="s3" x="27" y="56" width="20" height="4" rx="2" fill="#c4ccd4"/>
+    </g>
+  </g>
+  <text class="a" x="100" y="34" font-size="16" font-weight="600" fill="#1f2328" style="animation-delay:.15s">Taskev</text>
+  <text class="a" x="100" y="58" font-size="14" fill="#59636e" style="animation-delay:.25s">Gestor de tareas pensado para responder qué toca hacer ahora: ordena por prioridad y</text>
+  <text class="a" x="100" y="78" font-size="14" fill="#59636e" style="animation-delay:.32s">progreso, y separa lo que vence hoy, lo atrasado y lo bloqueado.</text>
+  <g class="a" style="animation-delay:0.50s"><rect x="100.5" y="92.5" width="75" height="24" rx="4" fill="none" stroke="#d1d9e0"/><text class="m" x="138" y="108.5" font-size="13" fill="#59636e" text-anchor="middle">Next.js</text></g>
+  <g class="a" style="animation-delay:0.57s"><rect x="183.5" y="92.5" width="59" height="24" rx="4" fill="none" stroke="#d1d9e0"/><text class="m" x="213" y="108.5" font-size="13" fill="#59636e" text-anchor="middle">React</text></g>
+  <g class="a" style="animation-delay:0.64s"><rect x="250.5" y="92.5" width="98" height="24" rx="4" fill="none" stroke="#d1d9e0"/><text class="m" x="299.5" y="108.5" font-size="13" fill="#59636e" text-anchor="middle">TypeScript</text></g>
+  <g class="a" style="animation-delay:0.71s"><rect x="356.5" y="92.5" width="98" height="24" rx="4" fill="none" stroke="#d1d9e0"/><text class="m" x="405.5" y="108.5" font-size="13" fill="#59636e" text-anchor="middle">PostgreSQL</text></g>
+  <g class="a" style="animation-delay:.4s">
+    <circle cx="675" cy="29.5" r="3.5" fill="#1a7f37" opacity=".4"><animate attributeName="r" values="3.5;8;8" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0;0" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="675" cy="29.5" r="3.5" fill="#1a7f37"/>
+    <text class="m" x="786" y="34" font-size="13" fill="#59636e" text-anchor="end">Demo en línea</text>
+  </g>
+  <g transform="translate(805 21)"><g class="nu" fill="none" stroke="#0969da" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 14 14 0"/><path d="M4 0h10v10"/></g></g>
+  <rect class="d" x="0" y="135" width="820" height="1" fill="#d1d9e0" style="animation-delay:.1s"/>
+</svg>

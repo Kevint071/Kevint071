@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="204" viewBox="0 0 820 204" role="img" aria-label="Desarrollador Full Stack. Construyo aplicaciones web y APIs con arquitectura limpia. Mis proyectos nacen de problemas reales: cuando una tarea se repite a mano, la convierto en una herramienta. Así hice un editor en lote de tareas de Azure DevOps. Ahora exploro cómo trabajar con IA como un agente casi autónomo: partir de una especificación (OpenSpec), darle un proceso con planes y pruebas (Superpowers) y quedarme yo con el criterio y la revisión: el agente ejecuta, yo decido.">
+  <style>
+    text{font-family:-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .a{opacity:0;animation:in .6s cubic-bezier(.2,.7,.2,1) both}
+    @media (prefers-reduced-motion:reduce){.a{animation:none;opacity:1}}
+  </style>
+  <text class="a" x="0" y="20" font-size="18" fill="#e6edf3" style="animation-delay:0.10s">Desarrollador Full Stack. Construyo aplicaciones web y APIs con arquitectura limpia.</text>
+  <text class="a" x="0" y="62" font-size="18" fill="#8b949e" style="animation-delay:0.20s">Mis proyectos nacen de problemas reales: cuando una tarea se repite a mano, la</text>
+  <text class="a" x="0" y="90" font-size="18" fill="#8b949e" style="animation-delay:0.30s">convierto en una herramienta. Así hice un editor en lote de tareas de Azure DevOps.</text>
+  <text class="a" x="0" y="132" font-size="18" fill="#8b949e" style="animation-delay:0.40s">Ahora exploro cómo trabajar con IA como un agente casi autónomo: partir de una</text>
+  <text class="a" x="0" y="160" font-size="18" fill="#8b949e" style="animation-delay:0.50s">especificación (OpenSpec), darle un proceso con planes y pruebas (Superpowers)</text>
+  <text class="a" x="0" y="188" font-size="18" fill="#8b949e" style="animation-delay:0.60s">y quedarme yo con el criterio y la revisión: el agente ejecuta, yo decido.</text>
+</svg>
