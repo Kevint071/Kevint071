@@ -28,7 +28,7 @@ Arquitectura limpia en [Kelist](https://github.com/Kevint071/Kelist) y [KelistAP
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" />
-  <img src="assets/stack-light.svg" alt="Stack: lenguajes C#, Python, TypeScript, JavaScript, HTML5, CSS3. Backend .NET y Node.js. Frontend React, Next.js y Flet. Bases de datos PostgreSQL, SQLite, SQL Server y SSMS. Cloud y DevOps Azure, Azure DevOps y Docker. Herramientas Visual Studio, VS Code, Postman, Git y GitHub." width="100%" />
+  <img src="assets/stack-light.svg" alt="Stack: lenguajes C#, Python, TypeScript y JavaScript. Backend .NET y Node.js. Frontend HTML5, CSS3, React, Next.js, Tailwind CSS y Flet. Bases de datos PostgreSQL, SQLite, SQL Server, Neon y Redis. ORM Prisma, Drizzle y EF Core. Cloud y DevOps Azure, Azure DevOps, Docker, Vercel y GitHub Actions. Desarrollo con IA Claude Code, GitHub Copilot, OpenCode, MCP y OpenSpec. Herramientas Visual Studio, VS Code, Postman, Git, GitHub y SSMS." width="100%" />
 </picture>
 
 ## Actividad
