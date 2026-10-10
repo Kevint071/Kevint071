@@ -1,15 +1,20 @@
-// Genera assets/row-<id>-{dark,light}.svg: una fila por proyecto con un glifo animado propio.
+// Genera assets/row-<id>-{dark,light}.svg: una fila por proyecto con un glifo animado propio,
+// y assets/link-{github,web}-{dark,light}.svg: los dos iconos enlazables que van a su derecha.
+// Cada fila del README son tres imágenes en la misma línea, sin espacios entre ellas:
+// fila (CW/W = 90.24%) + GitHub (IW/W = 4.88%) + demo (4.88%). GitHub no conserva enlaces dentro de un SVG,
+// por eso cada icono es una imagen aparte con su propio <a>.
 // Uso: node .github/scripts/projects.mjs
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const THEMES = {
-  dark: { text: "#e6edf3", mute: "#8b949e", line: "#30363d", soft: "#161b22", ph: "#3d444d", bar: "#6e7681", accent: "#58a6ff", ok: "#3fb950", onAccent: "#0d1117" },
-  light: { text: "#1f2328", mute: "#59636e", line: "#d1d9e0", soft: "#f6f8fa", ph: "#c4ccd4", bar: "#8c959f", accent: "#0969da", ok: "#1a7f37", onAccent: "#ffffff" },
+  dark: { text: "#e6edf3", mute: "#8b949e", line: "#30363d", soft: "#161b22", ph: "#3d444d", bar: "#6e7681", accent: "#58a6ff", onAccent: "#0d1117" },
+  light: { text: "#1f2328", mute: "#59636e", line: "#d1d9e0", soft: "#f6f8fa", ph: "#c4ccd4", bar: "#8c959f", accent: "#0969da", onAccent: "#ffffff" },
 };
 const SANS = `-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif`;
 const MONO = `ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace`;
 const EASE = "cubic-bezier(.2,.7,.2,1)";
 const W = 820, H = 136, GLYPH = 72, GY = 20, TX = 100;
+const IW = 40, CW = W - 2 * IW; // ancho de cada icono enlazable y de la fila que queda a su izquierda
 // Escala tipográfica única: 16 títulos, 14 texto, 13 meta (mono: etiquetas, estado).
 const FS = { title: 16, body: 14, meta: 13 };
 
@@ -109,9 +114,8 @@ const PROJECTS = [
   {
     id: "azure-devops-task-editor",
     name: "azure-devops-task-editor",
-    desc: ["Edita en lote las Tasks hijas de un PBI: estado, responsable y horas de varias a la vez,", "sin abrir cada Work Item. El token de acceso va en cookies httpOnly, fuera del alcance del cliente."],
+    desc: ["Edita en lote las Tasks hijas de un PBI: estado, responsable y horas de varias a la vez,", "sin abrir cada Work Item. El token va en cookies httpOnly, fuera del alcance del cliente."],
     tags: ["Next.js", "TypeScript", "Azure DevOps"],
-    status: "Demo en línea",
     glyph: taskEditor,
   },
   {
@@ -119,7 +123,6 @@ const PROJECTS = [
     name: "Finver",
     desc: ["Control financiero familiar: ingresos y gastos organizados por grupos,", "con un análisis básico de lo que entra y lo que sale."],
     tags: ["Next.js", "TypeScript"],
-    status: "Demo en línea",
     glyph: finver,
   },
   {
@@ -127,7 +130,6 @@ const PROJECTS = [
     name: "Taskev",
     desc: ["Gestor de tareas pensado para responder qué toca hacer ahora: ordena por prioridad y", "progreso, y separa lo que vence hoy, lo atrasado y lo bloqueado."],
     tags: ["Next.js", "React", "TypeScript", "PostgreSQL"],
-    status: "Demo en línea",
     glyph: taskev,
   },
   {
@@ -135,10 +137,36 @@ const PROJECTS = [
     name: "DiezApp + Diezapp-api",
     desc: ["App local para calcular diezmos: reparte un monto neto, guarda el historial, resume por mes", "y exporta a PDF. Su API hace de proxy OAuth para conectar con Google Drive."],
     tags: ["Python", "Flet", "SQLite", "Next.js (API)"],
-    status: "API en línea",
     glyph: diezapp,
   },
 ];
+
+// ---------- Iconos enlazables ----------
+
+const GITHUB = `<path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/>`;
+// Ventana de navegador: la app desplegada, funcionando.
+const WEB = `<g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x=".65" y="1.65" width="14.7" height="12.7" rx="2"/><path d="M.65 5.35h14.7"/><path d="m6.5 7.8 3.2 2.1-3.2 2.1z" fill="currentColor"/></g><circle cx="3" cy="3.5" r=".7" fill="currentColor"/><circle cx="5.2" cy="3.5" r=".7" fill="currentColor"/>`;
+
+// Separador inferior. Todas las imágenes de la fila dibujan la misma línea de W de ancho, desplazada a su
+// posición, para que al animarse crezca de izquierda a derecha como una sola.
+const divider = (t, x) =>
+  `<rect class="d" x="${-x}" y="${H - 1}" width="${W}" height="1" fill="${t.line}" style="animation-delay:.1s"/>`;
+
+const icon = (t, x, label, glyph) => `<svg xmlns="http://www.w3.org/2000/svg" width="${IW}" height="${H}" viewBox="0 0 ${IW} ${H}" role="img" aria-label="${label}">
+  <style>
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    .a{opacity:0;animation:in .6s ${EASE} both}
+    .d{transform-origin:left center;transform-box:fill-box;animation:draw .9s ${EASE} both}
+    @media (prefers-reduced-motion:reduce){.a,.d{animation:none;opacity:1}}
+  </style>
+  <g class="a" style="animation-delay:.4s">
+    <rect x="4.5" y="13.5" width="${IW - 9}" height="31" rx="6" fill="${t.soft}" stroke="${t.line}"/>
+    <g transform="translate(12 21)" color="${t.text}">${glyph}</g>
+  </g>
+  ${divider(t, x)}
+</svg>
+`;
 
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const CHAR = 7.8; // ancho aproximado de un carácter mono de 13px
@@ -156,18 +184,15 @@ for (const p of PROJECTS) {
         return out;
       })
       .join("\n  ");
-    const statusW = Math.round(p.status.length * CHAR);
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(p.name)}: ${esc(p.desc.join(" "))} ${p.tags.join(", ")}.">
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${CW}" height="${H}" viewBox="0 0 ${CW} ${H}" role="img" aria-label="${esc(p.name)}: ${esc(p.desc.join(" "))} ${p.tags.join(", ")}.">
   <style>
     text{font-family:${SANS}} .m{font-family:${MONO}}
     @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
     @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(2.5px,-2.5px)}}
     .a{opacity:0;animation:in .6s ${EASE} both}
     .d{transform-origin:left center;transform-box:fill-box;animation:draw .9s ${EASE} both}
-    .nu{animation:nudge 2.8s ease-in-out infinite}
     ${g.css}
-    @media (prefers-reduced-motion:reduce){.a,.d,.nu{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
+    @media (prefers-reduced-motion:reduce){.a,.d{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
   </style>
   <g class="a" style="animation-delay:.05s" transform="translate(0 ${GY})">
     <rect x=".5" y=".5" width="${GLYPH - 1}" height="${GLYPH - 1}" rx="8" fill="${t.soft}" stroke="${t.line}"/>
@@ -178,16 +203,14 @@ for (const p of PROJECTS) {
   <text class="a" x="${TX}" y="58" font-size="${FS.body}" fill="${t.mute}" style="animation-delay:.25s">${esc(p.desc[0])}</text>
   <text class="a" x="${TX}" y="78" font-size="${FS.body}" fill="${t.mute}" style="animation-delay:.32s">${esc(p.desc[1])}</text>
   ${chips}
-  <g class="a" style="animation-delay:.4s">
-    <circle cx="${W - 34 - statusW - 10}" cy="29.5" r="3.5" fill="${t.ok}" opacity=".4"><animate attributeName="r" values="3.5;8;8" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0;0" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="${W - 34 - statusW - 10}" cy="29.5" r="3.5" fill="${t.ok}"/>
-    <text class="m" x="${W - 34}" y="34" font-size="${FS.meta}" fill="${t.mute}" text-anchor="end">${esc(p.status)}</text>
-  </g>
-  <g transform="translate(${W - 15} 21)"><g class="nu" fill="none" stroke="${t.accent}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 14 14 0"/><path d="M4 0h10v10"/></g></g>
-  <rect class="d" x="0" y="${H - 1}" width="${W}" height="1" fill="${t.line}" style="animation-delay:.1s"/>
+  ${divider(t, 0)}
 </svg>
 `;
     writeFileSync(`assets/row-${p.id}-${mode}.svg`, svg);
   }
 }
-console.log(`Generadas ${PROJECTS.length * 2} filas en assets/`);
+for (const [mode, t] of Object.entries(THEMES)) {
+  writeFileSync(`assets/link-github-${mode}.svg`, icon(t, CW, "Código en GitHub", GITHUB));
+  writeFileSync(`assets/link-web-${mode}.svg`, icon(t, CW + IW, "Ver la demo", WEB));
+}
+console.log(`Generadas ${PROJECTS.length * 2} filas y 4 iconos en assets/`);

@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="136" viewBox="0 0 820 136" role="img" aria-label="DiezApp + Diezapp-api: App local para calcular diezmos: reparte un monto neto, guarda el historial, resume por mes y exporta a PDF. Su API hace de proxy OAuth para conectar con Google Drive. Python, Flet, SQLite, Next.js (API).">
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="136" viewBox="0 0 740 136" role="img" aria-label="DiezApp + Diezapp-api: App local para calcular diezmos: reparte un monto neto, guarda el historial, resume por mes y exporta a PDF. Su API hace de proxy OAuth para conectar con Google Drive. Python, Flet, SQLite, Next.js (API).">
   <style>
     text{font-family:-apple-system, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif} .m{font-family:ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace}
     @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
     @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-    @keyframes nudge{0%,100%{transform:translate(0,0)}50%{transform:translate(2.5px,-2.5px)}}
     .a{opacity:0;animation:in .6s cubic-bezier(.2,.7,.2,1) both}
     .d{transform-origin:left center;transform-box:fill-box;animation:draw .9s cubic-bezier(.2,.7,.2,1) both}
-    .nu{animation:nudge 2.8s ease-in-out infinite}
     @keyframes sg0{0%{stroke-dasharray:0 119.38}6%{stroke-dasharray:0 119.38}21%{stroke-dasharray:28.65 119.38}88%{stroke-dasharray:28.65 119.38}95%{stroke-dasharray:0 119.38}100%{stroke-dasharray:0 119.38}}.sg0{animation:sg0 6.5s cubic-bezier(.2,.7,.2,1) infinite}@keyframes sg1{0%{stroke-dasharray:0 119.38}23%{stroke-dasharray:0 119.38}38%{stroke-dasharray:42.98 119.38}88%{stroke-dasharray:42.98 119.38}95%{stroke-dasharray:0 119.38}100%{stroke-dasharray:0 119.38}}.sg1{animation:sg1 6.5s cubic-bezier(.2,.7,.2,1) infinite}@keyframes sg2{0%{stroke-dasharray:0 119.38}40%{stroke-dasharray:0 119.38}55%{stroke-dasharray:47.75 119.38}88%{stroke-dasharray:47.75 119.38}95%{stroke-dasharray:0 119.38}100%{stroke-dasharray:0 119.38}}.sg2{animation:sg2 6.5s cubic-bezier(.2,.7,.2,1) infinite}
-    @media (prefers-reduced-motion:reduce){.a,.d,.nu{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
+    @media (prefers-reduced-motion:reduce){.a,.d{animation:none}.glyph *{animation-play-state:paused!important;animation-delay:-4.2s!important}.a,.d{animation:none;opacity:1}}
   </style>
   <g class="a" style="animation-delay:.05s" transform="translate(0 20)">
     <rect x=".5" y=".5" width="71" height="71" rx="8" fill="#161b22" stroke="#30363d"/>
@@ -28,11 +26,5 @@
   <g class="a" style="animation-delay:0.57s"><rect x="175.5" y="92.5" width="51" height="24" rx="4" fill="none" stroke="#30363d"/><text class="m" x="201" y="108.5" font-size="13" fill="#8b949e" text-anchor="middle">Flet</text></g>
   <g class="a" style="animation-delay:0.64s"><rect x="234.5" y="92.5" width="67" height="24" rx="4" fill="none" stroke="#30363d"/><text class="m" x="268" y="108.5" font-size="13" fill="#8b949e" text-anchor="middle">SQLite</text></g>
   <g class="a" style="animation-delay:0.71s"><rect x="309.5" y="92.5" width="121" height="24" rx="4" fill="none" stroke="#30363d"/><text class="m" x="370" y="108.5" font-size="13" fill="#8b949e" text-anchor="middle">Next.js (API)</text></g>
-  <g class="a" style="animation-delay:.4s">
-    <circle cx="682" cy="29.5" r="3.5" fill="#3fb950" opacity=".4"><animate attributeName="r" values="3.5;8;8" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".45;0;0" keyTimes="0;.6;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="682" cy="29.5" r="3.5" fill="#3fb950"/>
-    <text class="m" x="786" y="34" font-size="13" fill="#8b949e" text-anchor="end">API en línea</text>
-  </g>
-  <g transform="translate(805 21)"><g class="nu" fill="none" stroke="#58a6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 14 14 0"/><path d="M4 0h10v10"/></g></g>
   <rect class="d" x="0" y="135" width="820" height="1" fill="#30363d" style="animation-delay:.1s"/>
 </svg>
